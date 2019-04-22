@@ -4,13 +4,9 @@
     "description": "this is git hooks demo",
     "main": "index.js",
     "scripts": {
-        "test": "node test.js",
-        "precommit": "node test.js",
+        "test": "node build/test.js",
+        "precommit": "test"
     },
-
     "author": "zhaowei-plus",
-    "license": "ISC",
-    "devDependencies": {
-        "pre-commit": "^1.2.2"
-    }
+    "license": "ISC"
 }
