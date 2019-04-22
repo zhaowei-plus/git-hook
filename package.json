@@ -6,9 +6,12 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "pre-commit": {
-        "bash"
-    },
+    "pre-commit": [
+        "test"
+    ],
     "author": "zhaowei-plus",
-    "license": "ISC"
+    "license": "ISC",
+    "devDependencies": {
+        "pre-commit": "^1.2.2"
+    }
 }

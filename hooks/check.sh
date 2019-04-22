@@ -31,6 +31,7 @@ then
 
 else
     echo '没有js文件需要检查'
+    echo '11111111111-222222222222'
 fi
 
 exit 0

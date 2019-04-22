@@ -1,9 +1,10 @@
 #!/bin/bash
 
+echo 'bash test'
+
 # 如果在commit时有未添加到暂存区的文件，拒绝提交
 diff = $(git diff)
-if [[ $diff !=0 ]];
-then
+if [[ $diff !=0 ]];then
   echo "some files is changed but not add to stash, git commit denied"
   exit 1
 fi
