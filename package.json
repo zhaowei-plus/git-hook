@@ -8,7 +8,8 @@
         "commitmsg": "node build/commit-msg.js",
         "post-commit": "node build/post-commit.js",
         "prepare-commit-msg": "node build/prepare-commit-msg.js",
-        "applypatch-msg": "node build/applypatch-msg.js"
+        "applypatch-msg": "node build/applypatch-msg.js",
+        "post-merge": "node build/post-merge.js"
     },
     "author": "zhaowei-plus",
     "license": "ISC",
