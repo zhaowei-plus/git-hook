@@ -4,12 +4,14 @@
     "description": "this is git hooks demo",
     "main": "index.js",
     "scripts": {
-        "precommit": "node build/pre-commit.js"
+        "precommit": "node build/pre-commit.js",
+        "commitmsg": "node build/commit-msg.js",
+        "post-commit": "node build/post-commit.js",
+        "applypatch-msg": "node build/applypatch-msg.js"
     },
     "author": "zhaowei-plus",
     "license": "ISC",
     "devDependencies": {
-        "debug": "^4.1.1",
         "husky": "0.14"
     }
 }
