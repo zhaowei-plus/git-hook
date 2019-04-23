@@ -8,14 +8,19 @@ function resolve(dir) {
 
 function checkTestFile() {
     const source = resolve('src');
-    const test = resolve('test');
+
+    console.log('source:', source);
 
     const files = fs.readdirSync(source);
+
+    console.log('files:', files);
+
     files.forEach(function(file) {
         if (file !== 'index.js') {
             const testFile = resolve(`test/${file}`);
+            console.log('testFile:', testFile, fs.existsSync(testFile));
             if (!fs.existsSync(testFile)) {
-                debug(`${file} 没有对应的同名测试文件,请添加对应测试用例文件`);
+                console.log(`${file} 没有对应的同名测试文件,请添加对应测试用例文件`);
                 process.exit(1);
             }
         }
@@ -36,7 +41,4 @@ function checkTestResult() {
     }
 }
 
-
-module.exports = function generateTest() {
-    checkTestResult();
-}
+checkTestResult();
