@@ -10,9 +10,9 @@ console.log(`
 const filePath = process.argv[1];
 console.log(`当前提交文件：${filePath}`);
 
-if (filePath.indexOf('package.json') > -1) {
-  console.log('package.json 被限制提交');
-  return 1;
+if (filePath.indexOf('commit-msg.js') > -1) {
+  console.log('commit-msg.js 被限制提交');
+  process.exit(1)
 }
 
-return 0
+process.exit(0)
