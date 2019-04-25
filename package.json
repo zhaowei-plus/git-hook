@@ -11,6 +11,8 @@
         "applypatchmsg": "node build/applypatch-msg.js",
         "postmerge": "node build/post-merge.js",
         "prepush": "node build/pre-push.js",
+        "prereceive": "node build/pre-receive.js",
+        "postreceive": "node build/post-receive.js",
         "applypatchmsg": "node build/pre-push.js"
     },
     "author": "zhaowei-plus",
