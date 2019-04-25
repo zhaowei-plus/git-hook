@@ -6,14 +6,21 @@
     "scripts": {
         "precommit": "node build/pre-commit.js",
         "commitmsg": "node build/commit-msg.js",
-        "post-commit": "node build/post-commit.js",
+        "postcommit": "node build/post-commit.js",
         "prepare-commit-msg": "node build/prepare-commit-msg.js",
-        "applypatch-msg": "node build/applypatch-msg.js",
-        "post-merge": "node build/post-merge.js"
+        "applypatchmsg": "node build/applypatch-msg.js",
+        "postmerge": "node build/post-merge.js",
+        "prepush": "node build/pre-push.js"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "node build/pre-commit.js",
+            "pre-push": "node build/pre-push.js"
+        }
     },
     "author": "zhaowei-plus",
     "license": "ISC",
     "devDependencies": {
-        "husky": "0.14"
+        "husky": "^1.3.1"
     }
 }
